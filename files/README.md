@@ -4,8 +4,9 @@
 ## Velcoity Controller
 To run the velocity controller, run `rosrun uw_test movo_vel_controller.py` on the Movo along with the RelaxedIK node
 
-## Mimicry Control
 The ar_mover script contains a class with various functions for moving the various parts of the robot. Instantiating the class and calling the function will perform some behavior according to the function. eg. Follow AR tag with arm, follow AR tag with base, move head etc.
+
+## Mimicry Control
 
 To run the mimicry_control, run the following nodes:
 ```shell
