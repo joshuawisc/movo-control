@@ -9,9 +9,11 @@ The mimicry control works by taking Vive controller positions from a project in 
 The velocity controller is a ROS node that takes joint angles solutions for both arms from relaxedIK and, using the current arm positions, determines how to move the arms using angular velocities. The controller also checks for collisions and doesn’t move the arm if it believes it will reach a collision state. One limitation is that the collision detector is a bit conservative and sometimes has a false-positive result. The node is reusable by anyone who wants to control the arms using relaxedIK. All the user had to do is publish end effector positions to relaxedIK while running the relaxedIK and velocity controller nodes in the background.
 
 The files included are:
-- **uw_test:** package containing source for the velocity controller as well as another ros script that does AR tracking and moves other parts of the robot
-- **relaxed_ik_files folder:** Contains RelaxedIK Config folder and start_here.py file
+- **uw_test:** package containing source for the velocity controller as well as another ros script that does AR tracking and moves other parts of the robot.
+- **relaxed_ik_files folder:** Contains RelaxedIK Config folder and start_here.py file for the ROS relaxedIK package.
 - **mimcricry_control_scripts folder:** Contains two scripts that are changed from the original mimicry_control package. The rest of the package is still needed.
+- **mimcricry_control_windows folder:** Contains one script for the unity project that is different from the original. The rest of the package is still needed.  
+
 All the files are also in their respective packages on the Movo’s PC.
 
 ## Work
